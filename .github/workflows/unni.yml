@@ -13,12 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run Custom Action
-        uses: ./.github/actions/unni-action
-  
       - name: Checkout Code
         uses: actions/checkout@v2
 
+      
+      - name: Run Custom Action
+        uses: ./.github/actions/unni-action
+  
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
