@@ -1,0 +1,8 @@
+name: "Unni Action"
+description: "Simple custom action"
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo "unni is here! all good!"
+      shell: bash

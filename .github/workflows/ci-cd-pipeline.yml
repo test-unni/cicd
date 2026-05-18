@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Run Custom Action
+        uses: ./.github/actions/unni-action
+  
       - name: Checkout Code
         uses: actions/checkout@v2
 
